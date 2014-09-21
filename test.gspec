@@ -1,0 +1,34 @@
+<gadgetlayout version="1.1">
+    <name >BigBeatBox</name>
+    <board x="-65" y="-65" width="130" height="130"/>
+    <component progname="buttons" type="adafruit-trellis">
+        <placedpart refdes="u1" x="30" y="30" rotation="0" mirrored="False"/>
+    </component>
+    <component progname="buttons1" type="adafruit-trellis">
+        <placedpart refdes="u1" x="-30" y="30" rotation="0" mirrored="False"/>
+    </component>
+    <component progname="buttons2" type="adafruit-trellis">
+        <placedpart refdes="u1" x="-30" y="-30" rotation="0" mirrored="False"/>
+    </component>
+    <component progname="buttons3" type="adafruit-trellis">
+        <placedpart refdes="u1" x="30" y="-30" rotation="0" mirrored="False"/>
+    </component>
+    <component progname="noname" type="mounting-hole-plated-screw">
+        <placedpart refdes="u1" x="62" y="-62" rotation="0" mirrored="False"/>
+    </component>
+    <component progname="noname1" type="mounting-hole-plated-screw">
+        <placedpart refdes="u1" x="-62" y="62" rotation="0" mirrored="False"/>
+    </component>
+    <component progname="noname2" type="mounting-hole-plated-screw">
+        <placedpart refdes="u1" x="-62" y="-62" rotation="0" mirrored="False"/>
+    </component>
+    <component progname="noname3" type="mounting-hole-plated-screw">
+        <placedpart refdes="u1" x="62" y="62" rotation="0" mirrored="False"/>
+    </component>
+    <component progname="noname4" type="faceplate-decoration-ucsd">
+        <placedpart refdes="u1" x="0" y="15" rotation="0" mirrored="False" scale="4.5"/>
+    </component>
+    <component progname="noname5" type="faceplate-decoration-gadgetron">
+        <placedpart refdes="u1" x="0" y="-43" rotation="0" mirrored="False" scale="2.5"/>
+    </component>
+</gadgetlayout>

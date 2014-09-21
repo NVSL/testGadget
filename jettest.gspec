@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<gadgetlayout>
+  <board x1="50.000000" y1="50.000000" x2="150.000000" y2="-50.000000"/>
+  <component name="name4" type="chronodot-RTC" x="34.496196" y="-34.968423" rotation="180.000000" mirrored="False"/>
+  <component name="name2" type="chronodot-RTC" x="34.030888" y="33.558657" rotation="0.000000" mirrored="True"/>
+  <component name="name3" type="Arduino_Micro_Rev03j" x="-31.794413" y="-49.713346" rotation="180.000000" mirrored="False"/>
+  <component name="name1" type="Arduino_Micro_Rev03j" x="-49.168086" y="1.351238" rotation="0.000000" mirrored="True"/>
+</gadgetlayout>
