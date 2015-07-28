@@ -1,6 +1,7 @@
 DESIGN=test
 
-default: automakit
+build: default
+default: test.all
 
 include ../Gadgetron.make
 
