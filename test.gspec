@@ -1,24 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <gadgetlayout version="1.1">
-    <name>Gadget Name</name>
-    <creator/>
-    <board height="80" width="100" x="0" y="0"/>
-    <option name="faceplate-color" value="clear-nocolor"/>
-    <option name="backplate-color" value="clear-nocolor"/>
-    <option name="faceplate-etch" value="etch-front"/>
-    <option name="backplate-etch" value="etch-back"/>
-    <option name="front-standoff-height" value="8"/>
-    <option name="back-standoff-height" value="8"/>
-    <option name="pcb-thickness" value="1.57"/>
-    <option name="faceplate-thickness" value="3.175"/>
-    <option name="backplate-thickness" value="3.175"/>
-    <option name="cam-target" value="LPKF"/>
-    <component progname="brain" type="Adafruit-Pro-Trinket-5V-battery-powered">
-        <placedpart mirrored="False" refdes="U1" rotation="0" x="30" y="11"/>
-    </component>
-    <component progname="battery" type="battery-9V-vertical">
-        <placedpart mirrored="False" refdes="BATT1" rotation="0" x="52" y="62"/>
-    </component>
-    <component progname="led" type="LED-5mm-bright-blue">
-        <placedpart mirrored="False" refdes="LED1" rotation="0" x="91" y="68"/>
-    </component>
+   <name>Gadget Name</name>
+   <creator />
+   <board x="0" y="0" width="150" height="100" />
+   <option name="faceplate-color" value="clear-nocolor" />
+   <option name="backplate-color" value="clear-nocolor" />
+   <option name="faceplate-etch" value="etch-front" />
+   <option name="backplate-etch" value="etch-back" />
+   <option name="front-standoff-height" value="8" />
+   <option name="back-standoff-height" value="8" />
+   <option name="pcb-thickness" value="1.57" />
+   <option name="faceplate-thickness" value="3.175" />
+   <option name="backplate-thickness" value="3.175" />
+   <option name="cam-target" value="LPKF" />
+   <component progname="LED" type="RGB-LED-5mm">
+      <placedpart refdes="LED1" x="10" y="10" rotation="0" mirrored="False" />
+   </component>
+   <component progname="caster" type="ball-caster-0.75in">
+      <placedpart refdes="u1" x="77" y="13" rotation="0" mirrored="False" />
+   </component>
+   <component progname="brain" type="Adafruit-Pro-Trinket-5V-battery-powered">
+      <placedpart refdes="U1" x="125" y="39" rotation="0" mirrored="False" />
+   </component>
+   <component progname="battery" type="battery-9V-vertical">
+      <placedpart refdes="BATT1" x="118" y="88" rotation="0" mirrored="False" />
+   </component>
+   <component progname="drive_2" type="dual-motor-kit-narrow-fast">
+      <placedpart refdes="L" x="82" y="62" rotation="0" mirrored="False" />
+      <placedpart refdes="R" x="61" y="93" rotation="235" mirrored="False" />
+      <placedpart refdes="DRVR" x="113" y="17" rotation="0" mirrored="False" />
+   </component>
 </gadgetlayout>
+
