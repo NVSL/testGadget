@@ -5,12 +5,19 @@ default:
 
 include $(GADGETRON_ROOT)/Tools/Gadgetron/Gadgetron2.make
 
+ifeq ($(shell uname),Darwin)
+ARDUINO=Arduino
+else
+ARDUINO=arduino
+endif
+
+
 %.zip: %.gspec
 	@rm -rf $(GADGETRON_ROOT)/Libraries/GadgetronSketchBook/libraries/*/.\#*
 	@echo Building $@
 	@$(MAKE_GADGET) -n $* -k $* -nopr > $*.log 2>&1 || (cat $*.log; exit 1)
 	@echo Compiling test program for $@
-	@Arduino --verify $*-Test-Program/$*-Test-Program.ino > $*-build.log 2>&1 || (cat $*-build.log;  exit 1)
+	@$(ARDUINO) --preferences-file arduino-config.txt --verify $*-Test-Program/$*-Test-Program.ino > $*-build.log 2>&1 || (cat $*-build.log;  exit 1)
 
 .PHONY:test
 test: solo-components all-in-one
