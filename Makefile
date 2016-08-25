@@ -15,7 +15,7 @@ endif
 %.zip: %.gspec
 	@rm -rf $(GADGETRON_ROOT)/Libraries/GadgetronSketchBook/libraries/*/.\#*
 	@echo Building $@
-	@$(MAKE_GADGET) -n $* -k $* -nopr > $*.log 2>&1 || (cat $*.log; exit 1)
+	@$(MAKE_GADGET) --gspec $< -nopr > $*.log 2>&1 || (cat $*.log; exit 1)
 	@echo Compiling test program for $@
 	@$(ARDUINO) --preferences-file arduino-config.txt --verify $*-Test-Program/$*-Test-Program.ino > $*-build.log 2>&1 || (cat $*-build.log;  exit 1)
 
@@ -38,5 +38,5 @@ retest:
 
 clean:
 	rm -rf *.zip *.brd *.sch *.html *.pro test-*.gspec *.log *.csv *.readme *.status test-gspecs everything*.gspec
-
+	rm -rf *-Test-Program *.h
 
